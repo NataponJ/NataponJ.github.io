@@ -28,8 +28,8 @@ const portfolioData = {
       },
     ],
     resume: {
-      label: "Download Resume",
-      filePath: "natapon-junjua-resume.txt",
+      label: "Resume",
+      filePath: "CV_Natapon_Junjua.pdf",
     },
     about:
       "I build practical business software from front-end interfaces to backend services. My recent work includes microservices, REST APIs, and product features that improve reliability, testing quality, and release confidence.",
@@ -292,16 +292,21 @@ function renderProfile() {
   resumeLink.append(resumeIconWrap);
   resumeLink.append(createElement("span", "social-label", portfolioData.profile.resume.label));
   resumeLink.href = portfolioData.profile.resume.filePath;
-  resumeLink.setAttribute("download", "Natapon-Junjua-Resume.txt");
+  resumeLink.setAttribute("download", "Natapon_Junjua-Resume.pdf");
   linkContainer.append(resumeLink);
 
   document.getElementById("about").textContent = portfolioData.profile.about;
 }
 
 function setActiveTopic(topicId, options = {}) {
-  const { updateHash = true, focusSection = true } = options;
+  const { updateHash = true, focusSection = true, scrollToTop = true } = options;
   const nextTopic = isValidTopic(topicId) ? topicId : "about";
   activeTopic = nextTopic;
+
+  const heroSection = document.getElementById("heroSection");
+  if (heroSection) {
+    heroSection.hidden = nextTopic !== "about";
+  }
 
   document.querySelectorAll(".topic-page").forEach((section) => {
     const isActive = section.dataset.topic === nextTopic;
@@ -317,6 +322,10 @@ function setActiveTopic(topicId, options = {}) {
 
   if (updateHash) {
     window.location.hash = nextTopic;
+  }
+
+  if (scrollToTop) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   if (focusSection) {
@@ -401,17 +410,20 @@ function renderNavigation() {
 
   window.addEventListener("hashchange", () => {
     const nextTopic = getTopicFromHash();
-    setActiveTopic(nextTopic, { updateHash: false, focusSection: false });
+    setActiveTopic(nextTopic, { updateHash: false, focusSection: false, scrollToTop: true });
   });
 
   const initialTopic = getTopicFromHash();
-  setActiveTopic(initialTopic, { updateHash: false, focusSection: false });
+  setActiveTopic(initialTopic, { updateHash: false, focusSection: false, scrollToTop: false });
 }
 
 function renderExperience(containerId, items) {
   const container = document.getElementById(containerId);
   items.forEach((item) => {
     const card = createElement("article", "exp-card");
+    if (/present/i.test(item.duration)) {
+      card.append(createElement("span", "present-badge", "Present"));
+    }
     if (item.category) {
       card.append(createElement("p", "pill", item.category));
     }

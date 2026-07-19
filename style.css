@@ -292,6 +292,22 @@ h2 {
   border-radius: var(--radius);
   padding: 1.15rem;
   box-shadow: var(--shadow);
+  position: relative;
+}
+
+.present-badge {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.58rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: linear-gradient(120deg, #19a974, #0f8f63);
 }
 
 .exp-card h3 {
