@@ -1,0 +1,74 @@
+Natapon Junjua
+Full-Stack Developer
+Location: Chatuchak, Bangkok, Thailand
+Phone: 084-226-3878
+Email: natapon.jun01@gmail.com
+LinkedIn: https://linkedin.com/in/natapon-jun/
+GitHub: https://github.com/NataponJ
+
+Profile
+Software developer with almost 4 years of experience as a Full-stack Developer.
+Built ERP systems and microservices for a product sales web application,
+improving scalability, maintainability, and performance.
+
+Work Experience
+1) Middle Full-Stack Developer
+   Organization: Aware Outsourcing Services Corporation (Thailand) Ltd.
+   Client: AIS
+   Duration: Jul. 2025 - Present
+   Responsibilities:
+   - Developed and maintained microservices for a product sales web application.
+   - Designed and implemented new features based on business requirements.
+   - Reduced bugs and improved reliability.
+   - Deployed system updates and managed release processes.
+   - Supported UAT and collaborated with QA teams.
+   - Wrote unit tests to reduce regressions.
+   Stack: TypeScript, Angular, Node.js, Nest.js, MongoDB, Jest, Docker, Elastic, Postman, Huawei Cloud
+
+2) Junior Full-Stack Developer
+   Organization: ITOPPLUS Co., Ltd.
+   Client: Inhouse
+   Duration: Apr. 2023 - Jul. 2025
+   Responsibilities:
+   - Developed ERP systems.
+   - Developed HR systems (leave requests and warning document generation).
+   - Developed service desk and business process management systems.
+   - Implemented issue tracking statuses (Open, In Progress, Resolved, Reopened, Closed).
+   - Implemented mention, comment, and reply system.
+   Stack: TypeScript, Angular, Node.js, Express.js, GraphQL, SQL, MySQL, Jest, Jira, Huawei Cloud
+
+Internship Experience
+1) Front-end Developer (Intern)
+   Organization: Brainergy Digital Co., Ltd.
+   Client: Inhouse
+   Duration: Jun. 2022 - Feb. 2023
+   Responsibilities:
+   - Developed E-Tax web application.
+   - Customized UI and chart information pages.
+   - Built responsive layouts across PC, tablet, and mobile.
+   - Connected API endpoints and configured role permissions.
+   Stack: TypeScript, Angular, Node.js, GitLab, ClickUp
+
+2) Software Developer (Intern)
+   Organization: Soft Square Group of Companies
+   Client: Inhouse
+   Duration: Nov. 2020 - Apr. 2021
+   Responsibilities:
+   - Designed UX/UI and developed front-end pages.
+   - Connected API endpoints.
+   - Created SQL scripts for PostgreSQL.
+   - Generated receipt reports.
+   Stack: TypeScript, Angular, Node.js, SQL, PostgreSQL
+
+Education
+Bachelor of Computer Engineering
+Panyapiwat Institute of Management (2019 - 2023)
+GPA: 3.16
+
+Skills
+Programming Languages: JavaScript, TypeScript, SQL
+Frontend: Angular, React, HTML, CSS, SASS
+Backend: Node.js, Express.js, GraphQL, Nest.js
+Database: MySQL, MongoDB
+Architecture: REST API, Microservices
+Tools: Git, Docker, Postman, Jira

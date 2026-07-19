@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natapon Junjua | Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Natapon Junjua, Full-Stack Developer in Bangkok, Thailand."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#" id="brandHome">Natapon Junjua</a>
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          Menu
+        </button>
+        <nav class="topic-nav" id="topicNav" aria-label="Topic Navigation"></nav>
+      </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile-menu container" aria-label="Mobile Navigation"></div>
+
+    <header class="hero section">
+      <div class="hero-inner container">
+        <h1 id="fullName"></h1>
+        <p class="role" id="headline"></p>
+        <p class="summary" id="profileSummary"></p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section
+        id="topic-about"
+        class="section topic-page active"
+        data-topic="about"
+        tabindex="-1"
+      >
+        <h2>About</h2>
+        <div class="card" id="about"></div>
+      </section>
+
+      <section id="topic-contact" class="section topic-page" data-topic="contact" tabindex="-1">
+        <h2>Contact</h2>
+        <div class="card contact-card">
+          <div class="contact-block">
+            <h3>Direct Contact</h3>
+            <div class="hero-meta contact-list" id="contact"></div>
+          </div>
+          <div class="contact-block">
+            <h3>Social</h3>
+            <div class="hero-actions social-links" id="socialLinks"></div>
+          </div>
+          <div class="contact-education" id="contactEducation"></div>
+        </div>
+      </section>
+
+      <section id="topic-experience" class="section topic-page" data-topic="experience" tabindex="-1">
+        <h2>Experience</h2>
+        <div id="experience" class="grid-two"></div>
+      </section>
+
+      <section id="topic-projects" class="section topic-page" data-topic="projects" tabindex="-1">
+        <h2>Selected Projects</h2>
+        <div id="projects" class="grid-two"></div>
+      </section>
+
+      <section id="topic-skills" class="section topic-page" data-topic="skills" tabindex="-1">
+        <h2>Skills</h2>
+        <div id="skills" class="skills-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built with HTML, CSS, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
