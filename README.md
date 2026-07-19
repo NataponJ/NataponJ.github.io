@@ -1,28 +1,47 @@
-# Portfolio
+# Natapon Junjua - Portfolio Website
 
-This is a static portfolio website built with HTML, CSS, and JavaScript.
+Personal portfolio website for Natapon Junjua, Full-Stack Developer based in Bangkok, Thailand.
 
-## Local preview
+## Web Information
 
-Open index.html in a browser, or run a simple local server:
+- Name: Natapon Junjua
+- Role: Full-Stack Developer
+- Experience: Almost 4 years
+- Location: Chatuchak, Bangkok, Thailand
+- Email: natapon.jun01@gmail.com
+- Phone: 084-226-3878
+- LinkedIn: https://linkedin.com/in/natapon-jun/
+- GitHub: https://github.com/NataponJ
 
-- Python 3: `python3 -m http.server 8080`
-- Then open: http://localhost:8080
+## About This Website
 
-## GitHub Pages deployment (automatic)
+This is a static website built with HTML, CSS, and JavaScript.
 
-This repository is configured with a GitHub Actions workflow:
+The website includes topic-based pages:
 
-- File: .github/workflows/deploy-pages.yml
+- About
+- Experience (including internships)
+- Projects
+- Skills (with per-skill icons)
+- Contact (social links and education)
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- GitHub Actions (GitHub Pages deployment)
+
+## Preview
+
+- https://nataponj.github.io/
+
+## Deployment
+
+This repository is configured for automatic deployment to GitHub Pages.
+
+- Workflow: .github/workflows/deploy-pages.yml
 - Trigger: push to main branch
-- Output: GitHub Pages site
+- Target repo: NataponJ/NataponJ.github.io
 
-### One-time GitHub setup
-
-1. Push this project to a GitHub repository.
-2. Open repository Settings -> Pages.
-3. Under Build and deployment, choose Source: GitHub Actions.
-4. Ensure your default branch is main.
-5. Push commits to main to publish updates automatically.
-
-After deployment completes, your site URL will be shown in the Actions run summary.
+After pushing updates to main, deployment status is available in the Actions tab.
